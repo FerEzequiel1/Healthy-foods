@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+:root {
+    --primary-color:  #495a29;
+    --secondary-color: #ecefed;
+    --main-font:'Courier New', Courier, monospace;
+    --secundary-font:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* HEADER Y NAV */
+p h2 h3 {
+    font-family: var(--secundary-font);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+
+}
+.btnHamburger{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+header nav ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: var(--secondary-color);
+   
+}
+header nav ul li{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-right: 2px solid black;
+}
+
+header{
+    height: 5rem;
+}
+h1{
+    margin: auto;
+    font-family: var(--main-font)
+}
+nav{
+    margin: auto;
+}
+
+body{
+    background-image: url("/recursos/imagenes/img3.png");
+}
+
+                                                                        /* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    
+    
+}
+.redes{
+    margin-top: 2.5rem;
+}
+.listaFooter{
+    display: flex;
+    gap: 4rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.3rem;
+
+}
+.itemsFooter{
+    color:var(--secondary-color);
+}
+
+                                                                           /* ESTILOS INDEX */
+                                                                       
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imgPortada{
+    width:100vw ;
+    height:70vh;
+    object-fit: fill;
+}
+.titulo ,.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 3em; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+
+}
+.texto{
+    top: 70%;
+    font-size: 2.5em;
+
+}
+
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+     
+}
+
+.seccion1 .parrafo img{
+    display: block;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: 80%;
+}
+.h2Primersection{
+    margin-top: 1rem;
+    border-bottom: solid 1px black;
+    width: 60%;
+    background-color: var(--secondary-color);
+}
+.parrafo {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 1.7rem;
+    padding: 3rem; 
+    background-color: var(--secondary-color);
+}
+
+
+
+
+                                                                         /* ESTILOS CONTACTO*/
+
+
+.mainContac{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:1rem;
+
+}
+
+.location h3{
+    font-size: 1.7rem;
+    background-color: var(--secondary-color);
+
+}
+/*EStilos formulario*/
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-top: 1rem;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+
+/*                                                            ESTILOS RECETAS PREPARADAS */
+.recetasItems{
+    margin: 0 1rem 0 1rem;
+}
+.ingredientesContainer{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+   
+    
+}
+.ingredientesContainer iframe{
+    margin-top: 5rem;
+}
+.mainRecetasPreparadas h2{
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+}
+.mainRecetasPreparadas section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.mainRecetasPreparadas section div ul li{
+    font-size: 1.7rem;
+    
+}
+.span{
+    display: block;
+    font-size: 2rem;
+}
+.spanTarta{
+    margin: 15px 0 15px 0;
+}
+.parrafoPastelPapa {
+    font-size: 1.7rem;
+    
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    
+}
+
+
+
+/* ESTILOS ARMA TUS RECETAS  */
+
+.mainContent{
+    display: flex;
+    justify-content: space-between;
+}
+.r{
+    background-color: #acedbb;
+    display: block;
+    
+}
+.f{
+    display: flex;
+    flex-direction: column;
+}
+.sectionItemsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+}
+.itemContainer{
+    width: 100px;
+    height: 170px;
+    padding: 0.5rem;
+    background-color: antiquewhite;
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s{
+    border: solid 5px rgb(181, 52, 52);
+}
+.btnItemsContainer{
+    margin-top: 0.6rem;
+}
+.btnCard{
+    width: 2rem;
+}
+
+
+/*     RESPONSIVE TABLET  INDEX*/
+
+@media (max-width:  1000px)  {
+    .hamburger{
+        display: flex;
+        justify-content: end;
+    }
+    .btnHamburger{
+        display: flex;
+        width: 10%;
+        height: 10%;
+        cursor: pointer;
+   
+    }
+    header nav ul{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*     RESPONSIVE TABLET RECETAS PREPARADAS*/
+
+@media (max-width:  1000px)  {
+    .ingredientesContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredientesContainer iframe{
+
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* NO FUE NECESARIO APLICAR RESPONSIVE EN CONTACTO PARA TABLE YA QUE SE ADAPTA BIEN */
+
+
+
+/*  REPSONSIVE MOBILE INDEX  */ 
+
+@media (max-width: 580px)  {
+    footer{
+        height: 100%;
+        margin-top: 2rem;
+    }
+    footer h5{
+        margin-top: 1rem;
+    }
+    .redes{
+        margin-top: 0rem;
+    }
+    .listaFooter{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+}
+
+
+
+/*  REPSONSIVE MOBILE RECETAS PREPARADAS  */ 
+@media (max-width: 580px)  {
+   .ingredientesContainer iframe{
+    width: 90%;
+    height: 110%;
+    padding: 1rem;
+
+   }
+}
+
+
+/*  REPSONSIVE MOBILE CONTACTO  */ 
+@media (max-width: 580px)  {
+    .contact-form{
+        width: 60%;
+        height: 60%;
+    }
+    .location iframe{
+        width: 100%;
+        height: 100%;
+    }
+ }
+ 
